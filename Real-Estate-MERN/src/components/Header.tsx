@@ -1,6 +1,10 @@
+//wip...
+
 function Header() {
   return (
-    <div>header</div>
+    <div>
+      <p>Header</p>
+    </div>
   )
 }
 
