@@ -1,17 +1,17 @@
 import { BrowserRouter, Route, Routes } from "react-router-dom";
-import Header from "./components/Header";
-import Home from "./pages/Home";
-import About from "./pages/About";
-import Profile from "./pages/Profile";
-import SignIn from "./pages/SignIn";
-import SignOut from "./pages/SignOut";
+import HomePage from "./core/pages/HomePage/HomePageWrapper";
+import About from "./core/pages/About/About";
+import Profile from "./core/pages/Profile/Profile";
+import SignIn from "./core/pages/SignIn/SignIn";
+import SignOut from "./core/pages/SignOut/SignOut";
+import Header from "./common/Header";
 
 function App() {
   return (
     <BrowserRouter>
       <Header />
       <Routes>
-        <Route index element={<Home />} />
+        <Route index element={<HomePage />} />
         <Route path="/about" element={<About />} />
         <Route path="/profile" element={<Profile />} />
         <Route path="/signin" element={<SignIn />} />
