@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom"
 
-function TopSection() {
+function HeroSection() {
     return (
       <div 
         className="max-w-6xl mx-auto h-[452px] flex flex-col justify-center gap-6"
@@ -28,4 +28,4 @@ function TopSection() {
     )
   }
   
-  export default TopSection
+  export default HeroSection

@@ -9,7 +9,6 @@ function Header() {
       <div className="flex max-w-6xl mx-auto justify-between items-center p-3">
         <Link to={"/"}>
           <div
-            onClick={() => {}}
             className="font-bold text-sm sm:text-xl flex flex-wrap gap-1 hover:cursor-pointer"
           >
             <span className="text-slate-500">Estate</span>
@@ -35,20 +34,6 @@ function Header() {
             <FaSearch className="text-slate-500"/>
           </button>
         </form>
-
-        <ul className="flex items-center gap-4">
-          <Link to={"/"}>
-            <li className="hover:cursor-pointer">Home</li>
-          </Link>
-
-          <Link to={"/about"}>
-            <li className="hover:cursor-pointer">About</li>
-          </Link>
-
-          <Link to={"/signin"}>
-            <li className="hover:cursor-pointer">Sign In</li>
-          </Link>
-        </ul>
 
         <ul className="flex items-center gap-4">
           {
