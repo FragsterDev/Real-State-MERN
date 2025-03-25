@@ -49,6 +49,16 @@ function Header() {
             <li className="hover:cursor-pointer">Sign In</li>
           </Link>
         </ul>
+
+        <ul className="flex items-center gap-4">
+          {
+            ["Home", "About", "Sign In"].map((text, index) => (
+              <li key={index} className="hover:cursor-pointer">
+                <Link to={text === "Home"? "/":`/${text.replace(/\s+/g,'').toLowerCase()}`}>{text}</Link>
+              </li>
+            ))
+          }
+        </ul>
       </div>
     </header>
   )
