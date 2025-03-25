@@ -4,7 +4,8 @@ import About from "./core/pages/About/About";
 import Profile from "./core/pages/Profile/Profile";
 import SignIn from "./core/pages/SignIn/SignIn";
 import SignOut from "./core/pages/SignOut/SignOut";
-import Header from "./common/Header";
+import Header from "./common/header";
+import React from "react";
 
 function App() {
   return (
