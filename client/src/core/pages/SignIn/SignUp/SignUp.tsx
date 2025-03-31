@@ -1,13 +1,13 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 
-const SignIn = () => {
+const SignUp = () => {
 
-    const fieldnames = ['Email', 'Password']
+    const fieldnames = ['Username', 'Email', 'Password']
 
     return (
         <div className='max-w-lg mx-auto p-3'>
-            <p className='text-center text-3xl font-semibold my-7'>Sign In</p>
+            <p className='text-center text-3xl font-semibold my-7'>Sign Up</p>
 
             <form className='flex flex-col gap-4'>
                 {
@@ -21,21 +21,21 @@ const SignIn = () => {
                 }
 
                 <button className='bg-slate-700 p-3 rounded-lg hover:cursor-pointer'>
-                    <p className='text-center text-white'>SIGN IN</p>
+                    <p className='text-center text-white'>SIGN UP</p>
                 </button>
 
                 <button className='bg-red-700 p-3 rounded-lg hover:cursor-pointer'>
-                    <p className='text-center text-white'>CONTINUE WITH GOOGLE</p>
+                    <p className='text-center text-white'>SIGN UP WITH GOOGLE</p>
                 </button>
             </form>
             <div className='flex gap-2 mt-5'>
-                <p>Not a registered user ?</p>
-                <Link to={'/sign-up'}>
-                    <p className='text-blue-500 hover:underline hover:cursor-pointer'>Click here to Sign Up</p>
+                <p>Already registered ?</p>
+                <Link to={'/sign-in'}>
+                    <p className='text-blue-500 hover:underline hover:cursor-pointer'>Sign In</p>
                 </Link>
             </div>
         </div>
     )
 }
 
-export default SignIn
+export default SignUp
